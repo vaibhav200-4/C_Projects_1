@@ -78,22 +78,40 @@ void riksha()
 {
  printf("\nENTRY SUCCESSFUL\n");
  nor++;
- amount=amount+50;
- count++;
+ if(nor>=3)
+ {
+     printf("parking full for Riksha \n");
+ }
+ else
+ 
+ {
+     amount=amount+50;
+     count++;
+ }
 }
 //CYCLE FUNCTION
 void cycle()
 {
  printf("\nENTRY SUCCESSFUL\n");
  noc++;
+ if(noc>=5){
+     printf("parking full for cycle");
+ }
+ else {
  amount=amount+20;
  count++;	
+ }
 }
 //BUS FUNCTION
 void bus()
 {
  printf("\nENTRY SUCCESSFUL\n");
  nob++;
+ if(nob>=3){
+     printf("Now parking full for bus\n");
+ }
+ else {
  amount=amount+100;
  count++;	
+ }
 }
